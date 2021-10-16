@@ -1,0 +1,48 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	int age;
+	string ans;
+	string health;
+	string yes="yes",no="no";
+	cout<<"Enter your age =";
+	cin>>age;
+	if(age<18)
+	{
+	 cout<<"You are not eligible to vote";
+	}
+	else{
+		cout<<"Is you involved in any criminal case"<<endl;
+	    cout<<"Type yes or no"<<endl;
+	    cin>>ans;
+	    if(ans==yes)
+	    {
+	    	cout<<"Sorry! you are criminal according to govt. you can't vote";
+		}
+		else if( ans==no)
+		{
+			cout<<"Are you mentally unfit means suffering from mental disorder"<<endl;
+			cout<<"Type yes or no"<<endl;
+			cin>>health;
+			if(health==yes)
+			{
+			cout<<"You are mentally unfit. you can't vote";	
+			}
+			else if(health==no)
+			{
+			cout<<"You are eligible citizen to vote";
+		    }
+		    else
+		    {
+		    cout<<"You select wrong input";
+			}
+		}
+		else
+		{
+			cout<<"You select wrong input";
+		}
+	
+	}
+	return 0;	
+}
